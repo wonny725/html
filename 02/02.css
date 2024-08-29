@@ -1,11 +1,149 @@
-header {
-  background-color: aliceblue;
+* {
+  padding: 0px;
+  margin: 0px;
+  box-sizing: border-box;
 }
 
-main {
-  background-color: aliceblue;
-}
+header,
+main,
 footer {
-  background-color: black;
+  width: 80%;
+  margin-left: 10%;
+  padding: 10px;
+}
+
+header,
+main {
+  background-color: rgb(213, 231, 220);
+}
+
+footer {
+  background-color: rgb(142, 173, 146);
   color: white;
+  padding: 10px;
+  font-size: small;
+  display: flex;
+  flex-direction: row;
+  text-align: center;
+}
+
+header,
+header ul {
+  display: flex;
+  flex-direction: row;
+  /* row : 수평 column : 수직 */
+  justify-content: space-between;
+  align-items: center;
+}
+
+header {
+  height: 80px;
+  padding: 20px;
+}
+
+ul {
+  list-style: none;
+}
+
+.menuLi {
+  margin-right: 10px;
+  margin-left: 10px;
+  padding: 10px;
+  background-color: rgb(30, 179, 97);
+  border-radius: 15px;
+}
+
+.menuLi:hover {
+  background-color: rgb(9, 133, 65);
+}
+/* } 마우스 올렸을 때 색 바뀌는거 */
+
+a {
+  text-decoration: none;
+  color: white;
+}
+
+article {
+  padding: 60px;
+  margin: 30px;
+}
+
+h1,
+article > p {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+article > p {
+  font-size: small;
+}
+
+p > span {
+  color: red;
+}
+
+section {
+  margin: 15px 20px;
+  padding: 20px 40px;
+  /* 2개 입력 시 위, 아래 + 양쪽 순서, 4개 입력 시 반 시계로 */
+  background-color: white;
+  border-radius: 20px;
+}
+
+h2 {
+  padding-bottom: 20px;
+}
+
+.secDiv {
+  display: flex;
+  flex-direction: row;
+}
+
+.secDiv > div {
+  width: 20%;
+}
+
+.secDiv img {
+  width: 80%;
+  border-radius: 30%;
+}
+
+.secDiv > p {
+  width: 80%;
+  font-size: medium;
+}
+
+/* 미디어 쿼리 */
+
+@media screen and (max-width: 1024px) {
+  header,
+  main,
+  footer {
+    width: 100%;
+    margin-left: 0px;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  header,
+  header ul {
+    display: flex;
+    flex-direction: column;
+    /* row : 수평 column : 수직 */
+    justify-content: space-between;
+    align-items: center;
+  }
+}
+
+header {
+  height: auto;
+  padding: 20px;
+  width: 100%;
+}
+
+header li {
+  width: 60%;
+  margin-bottom: 5px;
 }

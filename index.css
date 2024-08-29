@@ -1,0 +1,36 @@
+* {
+  padding: 0px;
+  margin: 0px;
+  box-sizing: border-box;
+}
+header,
+main {
+  width: 80%;
+  margin-left: 10%;
+  padding: 10px;
+}
+
+header {
+  height: 80px;
+  padding: 20px;
+  background-color: rgb(148, 148, 97);
+}
+
+ul {
+  list-style: none;
+  display: flex;
+  flex-direction: column;
+  /* row : 수평 column : 수직 */
+  align-items: center;
+  font-size: larger;
+}
+
+main {
+  background-color: beige;
+  font-size: medium;
+}
+
+a {
+  text-decoration: none;
+  color: black;
+}

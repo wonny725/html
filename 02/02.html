@@ -15,19 +15,21 @@
   </head>
   <body>
     <!-- 메뉴영역  주석 단축키 ctrl + / -->
-    <header style="background-color: aliceblue" ;>
+    <!-- <header style="background-color: aliceblue" ;> -->
+    <header>
+      <div>mylogo</div>
       <nav>
-        <div>mylogo</div>
-        <ul>
-          <li><a href="#h2Htlm">HTLM</a></li>
-          <li><a href="#h2Css">CSS</a></li>
-          <li><a href="#h2Js">JavaScript</a></li>
-          <li><a href="#h2React">React</a></li>
-          <li>
+        <ul id="menu">
+          <li class="menuLi"><a href="#h2Htlm">HTLM</a></li>
+          <li class="menuLi"><a href="#h2Css">CSS</a></li>
+          <li class="menuLi"><a href="#h2Js">JavaScript</a></li>
+          <li class="menuLi"><a href="#h2React">React</a></li>
+          <li class="menuLi">
             <a href="https://www.facebook.com/" target="_blank">facebook</a>
           </li>
-          <li>
+          <li class="menuLi">
             <a href="https://www.instagram.com" target="_blank">instagram</a>
+            <!-- blank 는 새 창으로 띄워줌 -->
           </li>
         </ul>
       </nav>
@@ -35,54 +37,64 @@
     <main>
       <article>
         <h1>프론트엔드 (FrontEnd)</h1>
+        <br />
         <hr />
-        <!--수평선-->
+        <br />
         <p>
           웹에서 사용자에게 시각적으로 보여지는 부분을 의미한다.
-          <br />프론트엔드쪽에서는 <span>주로 HTML, CSS, 자바스크립트</span>가
-          쓰이며, <br />요즘은 페이스북에서 개발한 자바스크립트에서 파생된 싱글
-          페이지 애플리케이션 형태의 리액트가 많이 사용된다.
+          프론트엔드쪽에서는 <span>주로 HTML, CSS, 자바스크립트</span>가 쓰이며,
+          요즘은 페이스북에서 개발한 자바스크립트에서 파생된 싱글 페이지
+          애플리케이션 형태의 리액트가 많이 사용된다.
         </p>
+        <br />
         <hr />
         <!--수평선-->
       </article>
-      <section>
-        <h2 id="h2Htlm">HTLM</h2>
-        <div>
-          <!--div는 박스를 그리는 것-->
-          <img src="../img/html.png" alt="html" />
+      <section class="s1">
+        <h2 id="h2Html">HTLM</h2>
+        <div class="secDiv">
+          <div>
+            <!--div는 박스를 그리는 것-->
+            <img src="../img/html.png" alt="html" />
+          </div>
+          <p>
+            HTML(HyperText Markup Language)은 웹을 이루는 가장 기초적인 구성
+            요소로, 웹 콘텐츠의 의미와 구조를 정의할 때 사용
+          </p>
         </div>
-        <p>
-          HTML(HyperText Markup Language)은 웹을 이루는 가장 기초적인 구성
-          요소로, 웹 콘텐츠의 의미와 구조를 정의할 때 사용
-        </p>
       </section>
-      <section>
+      <section class="s2">
         <h2 id="h2Css">CSS</h2>
-        <div>
-          <img src="../img/css.png" alt="CSS" />
+        <div class="secDiv">
+          <div>
+            <img src="../img/css.png" alt="CSS" />
+          </div>
+          <p>
+            Cascading Style Sheets(CSS)는 HTML이나 XML(XML의 방언인 SVG, XHTML
+            포함)로 작성된 문서의 표시 방법을 기술하기 위한 스타일 시트 언어
+          </p>
         </div>
-        <p>
-          Cascading Style Sheets(CSS)는 HTML이나 XML(XML의 방언인 SVG, XHTML
-          포함)로 작성된 문서의 표시 방법을 기술하기 위한 스타일 시트 언어
-        </p>
       </section>
-      <section>
+      <section class="s1">
         <h2 id="h2Js">JavaScript</h2>
-        <div>
-          <img src="../img/js.png" alt="JavaScript" />
+        <div class="secDiv">
+          <div>
+            <img src="../img/js.png" alt="JavaScript" />
+          </div>
+          <p>
+            웹 페이지를 위한 스크립트 언어로 가벼운, 인터프리터 혹은
+            just-in-time 컴파일프로그래밍 언어로, 일급 함수를 지원
+          </p>
         </div>
-        <p>
-          웹 페이지를 위한 스크립트 언어로 가벼운, 인터프리터 혹은 just-in-time
-          컴파일프로그래밍 언어로, 일급 함수를 지원
-        </p>
       </section>
-      <section>
+      <section class="s2">
         <h2 id="h2React">React</h2>
-        <div>
-          <img src="../img/react.png" alt="react" />
+        <div class="secDiv">
+          <div>
+            <img src="../img/react.png" alt="react" />
+          </div>
+          <p>사용자 인터페이스를 만들기 위한 JavaScript 라이브러리</p>
         </div>
-        <p>사용자 인터페이스를 만들기 위한 JavaScript 라이브러리</p>
       </section>
     </main>
     <footer>
