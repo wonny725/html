@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- ..은 상위폴더, .은 동일폴더 -->
+    <link rel="stylesheet" type="text/css" href="../js.css" />
+    <link rel="stylesheet" type="text/css" href="./07.css" />
+    <title></title>
+    <script src="./07.js"></script>
+  </head>
+  <body>
+    <header>
+      <h1>단위환산</h1>
+      <div>
+        <a href="../index.html"
+          ><img src="../img/free-icon-home-button-9190709.png" />
+        </a>
+      </div>
+    </header>
+    <form>
+      <main>
+        <section class="sec">
+          <div class="row">
+            <div class="col">
+              <select name="sel1" id="sel1" class="p1">
+                <option value="℃" selected>섭씨온도(℃)</option>
+                <option value="℉">화씨온도(℉)</option>
+              </select>
+            </div>
+            <div class="col">
+              <select name="sel2" id="sel2" class="p2">
+                <option value="℃">섭씨온도(℃)</option>
+                <option value="℉" selected>화씨온도(℉)</option>
+              </select>
+            </div>
+          </div>
+          <div class="row">
+            <div class="col">
+              <input type="number" id="txt1" name="txt1" />
+              <label for="txt1">℃</label>
+            </div>
+            <div class="col">
+              <input type="number" id="txt2" name="txt2" />
+              <label for="txt1">℉</label>
+            </div>
+          </div>
+        </section>
+      </main>
+    </form>
+  </body>
+</html>

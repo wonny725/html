@@ -1,0 +1,40 @@
+.sec,
+.row {
+  width: 100%;
+}
+
+.row {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #695d5a;
+  margin-bottom: 20px;
+  padding: 10px;
+}
+
+.col {
+  width: 50%;
+  color: white;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+select {
+  width: 150px;
+  box-sizing: border-box;
+  border-radius: 10px;
+  padding: 10px 12px;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 16px;
+}
+
+input {
+  padding: 6px 6px;
+  width: 150px;
+  box-sizing: border-box;
+  border-radius: 10px;
+  font-weight: 400;
+  font-size: 14px;
+}

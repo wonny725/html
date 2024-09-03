@@ -21,8 +21,12 @@ ul {
   display: flex;
   flex-direction: column;
   /* row : 수평 column : 수직 */
-  align-items: center;
+  align-items: left;
   font-size: larger;
+}
+
+li:hover {
+  background-color: rgb(148, 148, 97);
 }
 
 main {
