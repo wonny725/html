@@ -7,34 +7,45 @@
   display: flex;
   justify-content: center;
   align-items: center;
-  background-color: #695d5a;
-  margin-bottom: 20px;
-  padding: 10px;
+  background-color: white;
+  margin-bottom: 5px;
+  padding: 5px;
 }
 
 .col {
   width: 50%;
-  color: white;
+  color: black;
   display: flex;
   justify-content: center;
   align-items: center;
+  padding: 10px;
 }
 
 select {
-  width: 150px;
+  width: 155px;
   box-sizing: border-box;
   border-radius: 10px;
-  padding: 10px 12px;
-  font-weight: 400;
-  font-size: 14px;
-  line-height: 16px;
+  padding: 8px 8px;
+  font-size: 13px;
 }
 
 input {
-  padding: 6px 6px;
-  width: 150px;
+  padding: 7px 7px;
+  width: 130px;
   box-sizing: border-box;
   border-radius: 10px;
-  font-weight: 400;
-  font-size: 14px;
+  font-size: 13px;
+}
+
+label {
+  display: inline-flex;
+  justify-content: center;
+  align-items: center;
+  font-size: large;
+  font-weight: bold;
+  margin-left: 10px;
+}
+
+#txt2 {
+  background-color: beige;
 }

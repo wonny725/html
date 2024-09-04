@@ -1,52 +1,42 @@
-// // //document.addEventListener("DOMContentLoaded", () => {}); 기본 형태 다써야 안헷갈림
+//select값 변경
+const handleChange = (s1, s2, lb1, lb2, t1, t2) => {
+  if (s1.value === "℃") s2.value = "℉";
+  else s2.value = "℃";
 
-// document.addEventListener("DOMContentLoaded", () => {
-//   const bt = document.querySelectorAll("button");
-//   const comDice = document.getElementById("computer-dice");
-//   const userDice = document.getElementById("user-dice");
+  lb1.innerHTML = s1.value;
+  lb2.innerHTML = s2.value;
 
-//   bt.forEach((button) => {
-//     button.addEventListener("click", () => {
-//       let n = Math.floor(Math.random() * 6) + 1; //1~6
-
-//       comDice.setAttribute("src", `../img/${1}.png`);
-//       comDice.setAttribute("alt", `컴퓨터 주사위 ${1}`);
-//       userDice.setAttribute("src", `../img/${n}.png`);
-//       userDice.setAttribute("alt", `사용자 주사위 ${n}`);
-//     });
-//   });
-// });
+  t1.value = "";
+  t2.value = "";
+};
 
 document.addEventListener("DOMContentLoaded", () => {
-  //이미지 가져오기
-  // const imgs = document.querySelectorAll(".dice-container img");
-  //바로 아래 자료 > //그냥 하위 폴더 공백
-  const bts = document.querySelectorAll("button");
-  const comDice = document.getElementById("computer-dice");
-  const userDice = document.getElementById("user-dice");
-  const judge = document.getElementById("judge");
+  //요소가져오기
+  const sel1 = document.querySelector("#sel1");
+  const sel2 = document.querySelector("#sel2");
 
-  //버튼 클릭 09.03 오후 수업
-  for (let bt of bts) {
-    bt.addEventListener("click", () => {
-      //컴퓨터 랜덤수
-      let comN = Math.floor(Math.random() * 6) + 1;
+  const txt1 = document.querySelector("#txt1");
+  const txt2 = document.querySelector("#txt2");
 
-      //사용자 선택수
-      // console.log(bt.textContent.charAt(0));
-      let userN = parseInt(bt.textContent.charAt(0));
+  const lb1 = document.querySelector("label[for=txt1]");
+  const lb2 = document.querySelector("label[for=txt2]");
 
-      comDice.setAttribute("src", `../img/${comN}.png`);
-      comDice.setAttribute("alt", `컴퓨터 주사위 ${comN}`);
-      userDice.setAttribute("src", `../img/${userN}.png`);
-      userDice.setAttribute("alt", `사용자 주사위 ${userN}`);
+  //select box
+  sel1.addEventListener("change", () => {
+    handleChange(sel1, sel2, lb1, lb2, txt1, txt2);
+  });
+  sel2.addEventListener("change", () => {
+    handleChange(sel2, sel1, lb2, lb1, txt1, txt2);
+  });
 
-      //결과출력
-      if (comN === userN) {
-        judge.textContent = "맞음";
-      } else {
-        judge.textContent = "틀림";
-      }
-    });
-  }
+  txt1.addEventListener("input", () => {
+    console.log(txt1.value);
+    if (sel1.value === "℃") {
+      //섭씨온도를 화씨온도로
+      txt2.value = (parseFloat(txt1.value) * (9 / 5) + 32).toFixed(3);
+    } else {
+      //화씨온도를 섭씨온도로 변경
+      txt2.value = ((parseFloat(txt1.value) - 32) * (5 / 9)).toFixed(3);
+    }
+  });
 });
