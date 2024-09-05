@@ -33,6 +33,9 @@ document.addEventListener("DOMContentLoaded", () => {
         upDown.setAttribute("src", "../img/down.png");
       } else {
         upDown.setAttribute("src", "../img/good.png");
+        alert("정답!!!!!!!!!!!!!!!!!!");
+        txt.style.display = "none";
+        bt.style.display = "none";
         flag = true;
         newGameSection.style.display = "block";
       }

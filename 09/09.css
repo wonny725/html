@@ -1,42 +1,26 @@
-.sec,
-.row {
+.sec {
   width: 100%;
-}
-
-.row {
   display: flex;
   justify-content: center;
   align-items: center;
-  margin-bottom: 5px;
-  padding: 5px;
 }
 
-input {
+.sec > input {
+  margin: 10px;
   padding: 7px 7px;
-  width: 160px;
   box-sizing: border-box;
   border-radius: 10px;
   font-size: 13px;
 }
 
-button {
-  margin-left: 10px;
+.sec > button {
+  width: 20%;
+  margin: 20px;
   padding: 8px;
   display: flex;
   justify-content: center;
   align-items: center;
   box-sizing: border-box;
   border-radius: 5px;
-  cursor: pointer;
-}
-
-#newGameSection {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-}
-
-#newGameButton {
-  padding: 10px 20px;
   cursor: pointer;
 }

@@ -4,11 +4,15 @@
   box-sizing: border-box;
 }
 
+main {
+  background-color: beige;
+  font-size: medium;
+}
+
 header,
 main {
   width: 80%;
   margin-left: 10%;
-
   display: flex;
 }
 

@@ -7,7 +7,6 @@
   display: flex;
   justify-content: center;
   align-items: center;
-  background-color: white;
   margin-bottom: 5px;
   padding: 5px;
 }
@@ -47,5 +46,5 @@ label {
 }
 
 #txt2 {
-  background-color: beige;
+  background-color: #698996;
 }
