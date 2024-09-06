@@ -1,0 +1,60 @@
+.sec {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: white;
+}
+
+#bt1 {
+  width: 30%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: white;
+}
+
+span {
+  width: 50px;
+  height: 50px;
+  margin: 7px;
+  padding: 6px 6px;
+  border-radius: 50%;
+  font-size: medium;
+  background-color: #ff8e72;
+  display: inline-flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.sp0,
+.sp5,
+.spBonus {
+  background-color: #49413f;
+}
+.sp1,
+.spPlus {
+  background-color: #ff8e72;
+}
+
+.sp2,
+.sp5 {
+  background-color: #007991;
+}
+
+.sp3,
+.sp4 {
+  background-color: #cda2ab;
+}
+
+.sec > button {
+  width: 30%;
+  margin: 20px;
+  padding: 8px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  box-sizing: border-box;
+  border-radius: 5px;
+  cursor: pointer;
+}

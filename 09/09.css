@@ -6,6 +6,7 @@
 }
 
 .sec > input {
+  width: 30%;
   margin: 10px;
   padding: 7px 7px;
   box-sizing: border-box;
