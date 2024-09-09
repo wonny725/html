@@ -27,26 +27,29 @@ span {
   align-items: center;
 }
 
-.sp0,
-.sp5,
-.spBonus {
+.sp0 {
   background-color: #49413f;
 }
-.sp1,
-.spPlus {
+
+.sp1 {
   background-color: #ff8e72;
 }
 
-.sp2,
-.sp5 {
+.sp2 {
   background-color: #007991;
 }
 
-.sp3,
-.sp4 {
+.sp3 {
   background-color: #cda2ab;
 }
 
+.sp4 {
+  background-color: #709176;
+}
+
+.spPlus {
+  background-color: #6cd4ff;
+}
 .sec > button {
   width: 30%;
   margin: 20px;
