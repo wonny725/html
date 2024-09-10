@@ -33,34 +33,57 @@ document.addEventListener("DOMContentLoaded", () => {
     console.log("obj2 = ", obj2["apple"]);
   });
 
-  for (let bt1 of secBt1) {
-    bt1.addEventListener("click", (e) => {
+  //추가
+  for (let bt of secBt1) {
+    bt.addEventListener("click", (e) => {
       e.preventDefault();
 
-      let addItem = bt1.innerHTML.replace("추가", "");
+      let addItem = bt.innerHTML.replace("추가", "");
       txt1.value = txt1.value + addItem;
-      console.log(bt1.innerHTML);
+      console.log(bt.innerHTML);
     });
   }
 
-  for (let bt2 of secBt2) {
-    bt2.addEventListener("click", (e) => {
+  //삭제
+  for (let bt of secBt2) {
+    bt.addEventListener("click", (e) => {
       e.preventDefault();
-      let delItem = bt2.innerHTML.replace("삭제", "");
-      // let tmArr = Array.from(txt1.value);
-      // tmArr = tmArr.filter((item) => item != delItem);
-      // txt1.value = tmArr.join("");
-      // console.log(tmArr);
-      // console.log(bt2.innerHTML);
-      txt1.value = txt1.value.replaceAll(delItem, "");
+
+      let addItem = bt.innerHTML.replace("삭제", "");
+      // case 1
+      // txt1.value = txt1.value.replaceAll(addItem, '') ;
+
+      let tmArr = Array.from(txt1.value); //이모지형태로 분리
+      // let tmArr = txt1.value.split('') ; //유니코드로 분리
+
+      // case 2
+      // for(let i =0 ; i < tmArr.length ; i++) {
+      //   if (tmArr[i] == addItem ) tmArr[i] = '' ;
+      //  }
+
+      // case 3
+      tmArr = tmArr.filter((item) => item != addItem);
+
+      tmArr = tmArr.join("");
+      txt1.value = tmArr;
+      console.log(tmArr);
     });
   }
 
-  for (let bt3 of secBt3) {
-    bt3.addEventListener("click", (e) => {
+  //변경
+  for (let bt of secBt3) {
+    bt.addEventListener("click", (e) => {
       e.preventDefault();
-      let items = bt3.innerHTML.split("→");
-      txt1.value = txt1.value.replaceAll(items[0], items[1]);
+
+      let items = bt.innerHTML.split("→");
+      console.log("items = ", items);
+      // txt1.value = txt1.value.replaceAll(items[0], items[1]) ;
+
+      let tmArr = Array.from(txt1.value);
+      tmArr = tmArr.map((item) => (item == items[0] ? items[1] : item));
+      txt1.value = tmArr.join("");
+
+      console.log(tmArr);
     });
   }
 });
