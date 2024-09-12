@@ -1,9 +1,7 @@
 #boxofficeMain {
   display: flex;
-
   flex-direction: column;
-  justify-content: start;
-  align-items: center;
+  border-bottom: none;
 }
 
 .sec,
@@ -21,36 +19,46 @@
 .divDt {
   width: 80%;
   height: 60px;
-  background-color: #709176;
-  flex-direction: row;
-
-  border: 1px dotted #49413f;
 }
 
-input[type="date"] {
+input[type="date"],
+select,
+fieldset {
   width: 40%;
   height: 30px;
+  border: none;
+}
+
+fieldset {
+  font-size: small;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+label {
+  margin-right: 5px;
+  margin-left: 2px;
 }
 
 .mvli {
-  width: 150%;
   height: 40px;
+  width: 100%;
   display: flex;
-  justify-content: start;
-  align-items: center;
-  margin: 0px 2px;
 }
 
-span,
-span:hover {
+.sec > ul {
+  list-style: none;
+  font-size: medium;
+}
+
+span {
   cursor: pointer;
   border-radius: 5px;
-  display: inline-block;
   text-decoration: none;
   color: black;
-  padding: 7px;
-  border-radius: 5px;
-  display: inline-block;
+  padding: 8px;
+  display: inline-flexbox;
 }
 
 span:hover {
@@ -60,15 +68,48 @@ span:hover {
 }
 
 .rank {
-  width: 7%;
-  margin: 10px;
-  padding: 8px;
+  width: 40px;
   display: inline-flex;
   justify-content: center;
-  align-items: center;
   border-radius: 5px;
   cursor: pointer;
   background-color: #49413f;
-  margin-right: 10px;
   color: white;
+}
+
+.rank:hover {
+  background-color: black;
+  transition: background-color 1s ease, color 1s ease;
+}
+
+.movieNm {
+  width: 60%;
+}
+
+.openDt {
+  width: 20%;
+}
+
+.rankInten {
+  width: 10%;
+}
+
+.spRed {
+  color: red;
+}
+
+.spBlue {
+  color: blue;
+}
+
+a {
+  text-decoration: none;
+}
+
+footer {
+  background-color: #49413f;
+  color: white;
+  padding: 30px;
+  font-size: small;
+  flex-direction: row;
 }

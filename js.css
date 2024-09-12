@@ -10,7 +10,8 @@ main {
 }
 
 header,
-main {
+main,
+footer {
   width: 80%;
   margin-left: 10%;
   display: flex;
@@ -35,7 +36,7 @@ main {
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  height: 550px;
+  height: 500px;
   border: 2px dotted #49413f;
   border-top: none;
 }
@@ -45,7 +46,6 @@ section {
 }
 
 button {
-  padding: 30px;
   font-size: medium;
   background-color: #49413f;
   color: white;

@@ -8,15 +8,14 @@
     <title>JS기초</title>
 
     <!-- 외부 스크립트 -->
-    <script src="./12.js"></script>
+    <script src="./12_select.js"></script>
   </head>
+
   <body>
     <header>
       <h1>자바스크립트 배열 - 박스오피스</h1>
       <div>
-        <a href="../index.html"
-          ><img src="../img/free-icon-home-button-9190709.png" />
-        </a>
+        <img src="../img/free-icon-home-button-9190709.png" /></a>
       </div>
     </header>
     <form>
@@ -24,14 +23,11 @@
         <section class="sec">
           <div class="divDt">
             <input type="date" id="dt" name="dt" />
-            <fieldset>
-              <input type="radio" id="r1" name="mvGubun" value="K" />
-              <label for="r1">한국영화</label>
-              <input type="radio" id="r2" name="mvGubun" value="F" />
-              <label for="r2">외국영화</label>
-              <input type="radio" id="r3" name="mvGubun" value="T" checked />
-              <label for="r3">전체</label>
-            </fieldset>
+            <select id="sel1" name="sel1">
+              <option value="K">한국영화</option>
+              <option value="F">외국영화</option>
+              <option value="T" selected>전체</option>
+            </select>
           </div>
         </section>
         <section class="sec">
@@ -39,8 +35,5 @@
         </section>
       </main>
     </form>
-    <footer id="myFooter">
-      <div id="mvInfo"></div>
-    </footer>
   </body>
 </html>
